@@ -3,7 +3,7 @@
  * @email seasparta618@gmail.com dev.leon618@gmail.com
  * @url 	
  */
-package au.leon.hackerrank.solution.practice.algorithms;
+package au.leon.hackerrank.solution.practice.datastructure;
 
 import java.util.ArrayList;
 import java.util.Arrays;

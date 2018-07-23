@@ -1,0 +1,54 @@
+package au.leon.hackerrank.solution.practice.datastructure;
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+/**
+ * 
+ * @author leon wang
+ * @Email seasparta618@gmail.com, dev.leon618@gmail.com
+ * @url
+ */
+public class LeftRotation {
+
+	public static ArrayList<Integer> leftRotation(int time, int[] array){
+		time = time % array.length;
+		ArrayList<Integer> resultList = new ArrayList<Integer>();
+		for(int i = time ; i < array.length ; i++) {
+			resultList.add(array[i]);
+		}
+		for(int i = 0 ; i < time ; i ++) {
+			resultList.add(array[i]);
+		}
+		return resultList;
+	}
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        String[] nd = scanner.nextLine().split(" ");
+
+        int n = Integer.parseInt(nd[0]);
+
+        int d = Integer.parseInt(nd[1]);
+
+        int[] a = new int[n];
+
+        String[] aItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int i = 0; i < n; i++) {
+            int aItem = Integer.parseInt(aItems[i]);
+            a[i] = aItem;
+        }
+        
+        ArrayList<Integer> resultList = leftRotation(d,a);
+        for(int result : resultList) {
+        	System.out.print(result+" ");
+        }
+        scanner.close();
+    }
+}

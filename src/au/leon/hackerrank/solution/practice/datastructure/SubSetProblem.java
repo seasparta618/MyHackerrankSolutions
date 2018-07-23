@@ -1,4 +1,4 @@
-package au.leon.hackerrank.solution.practice.algorithms;
+package au.leon.hackerrank.solution.practice.datastructure;
 
 import java.io.BufferedReader;
 import java.io.IOException;
