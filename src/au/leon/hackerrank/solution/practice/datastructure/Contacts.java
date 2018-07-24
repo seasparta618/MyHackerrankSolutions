@@ -19,7 +19,7 @@ public class Contacts {
 
 		int totalNumbers = Integer.parseInt(br.readLine());
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
-
+		
 		for (int count = 0; count < totalNumbers; count++) {
 			String[] queries = br.readLine().split(" ");
 
